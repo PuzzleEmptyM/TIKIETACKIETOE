@@ -12,10 +12,14 @@ import { useGameState } from "./useGameState";
 
 export default function Board() {
 	const { square, colors, winner, handleClick } = useGameState();
-	const map=square.map
 	return (
+		{
+			square.map((square, index) => (
+				<Square key={} />
+			)
+			))
+		}
 		<View style={styles.Board}>
-
 		</View>
 	)
 }

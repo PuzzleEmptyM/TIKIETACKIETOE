@@ -9,6 +9,10 @@ import {
 import { Colors } from "./Colors";
 import { useGameState } from "./useGameState";
 
+interface SquareProps{
+	id: int,
+}
+
 
 export default function Square() {
 	const { square, colors, winner, handleClick } = useGameState();
